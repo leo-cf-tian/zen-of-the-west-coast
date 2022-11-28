@@ -20,6 +20,7 @@ long getDistance(){
 }
 
 void setup() {
+  Serial.begin(9600);
   pinMode(ENA_PIN, OUTPUT);
   pinMode(IN1_PIN, OUTPUT);
   pinMode(IN2_PIN, OUTPUT);
@@ -28,20 +29,29 @@ void setup() {
   pinMode(ECHO, INPUT);
 
   digitalWrite(ENA_PIN, HIGH);
+
 }
 
 void loop() {
   long distance = getDistance();
+  Serial.println(distance);
   if(distance <= 15) {
     digitalWrite(IN1_PIN, LOW);
     digitalWrite(IN2_PIN, HIGH);
 
-    delay(20000); // actuator will stop extending automatically when reaching the limit
+    delay(8000); // actuator will stop extending automatically when reaching the limit
+
+    digitalWrite(IN1_PIN, LOW);
+    digitalWrite(IN2_PIN, LOW);
+
+    delay(5000);
 
     // retracts the actuator
     digitalWrite(IN1_PIN, HIGH);
     digitalWrite(IN2_PIN, LOW);
 
-    delay(20000); // actuator will stop retracting automatically when reaching the limit
+    delay(8000); // actuator will stop retracting automatically when reaching the limit
+    digitalWrite(IN1_PIN, LOW);
+    digitalWrite(IN2_PIN, LOW);
   }
 }
