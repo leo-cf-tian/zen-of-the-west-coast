@@ -1,0 +1,46 @@
+.Container {
+    width: 100%;
+    margin: 0;
+}
+
+.Link {
+    color: #717171;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.Link.active {
+    color: black;
+    background-color: #eeeeee;
+}
+
+.ContainerToolbar {
+    margin: 0;
+}
+
+.LinkToolbar {
+    color: #717171;
+    height: 100%;
+    padding: 12px 16px;
+    text-decoration: none; 
+}
+
+.LinkToolbar.active {
+    color: black;
+    background-color: #eeeeee;
+}
+
+@media (any-hover: hover) and (pointer: fine) {
+    .Link:hover {
+        color: black;
+        transition: 0.25s;
+    } 
+
+    .LinkToolbar:hover {
+        color: black;
+        transition: 0.25s;
+    }
+}

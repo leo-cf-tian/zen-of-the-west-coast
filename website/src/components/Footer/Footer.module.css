@@ -1,0 +1,37 @@
+.Container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 20px 16px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #14323c;
+    margin-top: auto;
+}
+
+.CopyrightText {
+    color: white;
+    margin: 0;
+}
+
+.LeftText {
+    color: white;
+    margin: 0;
+    font-size: 12px;
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .Container {
+        padding: 0 20px;
+        height: 65px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .LeftText {
+        font-size: 16px;
+        display: block;
+    }
+}

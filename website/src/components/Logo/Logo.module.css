@@ -1,0 +1,32 @@
+.Container {
+    padding: 0 8px 0 8px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.Icon {
+    max-height: 42px;
+}
+
+.Name {
+    padding-left: 6px; 
+    font-size: 23px; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@media (any-hover: hover) and (pointer: fine) {
+    .Container:hover > img {
+        animation: spin 1s linear infinite;
+    }
+}
