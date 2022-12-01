@@ -1,0 +1,49 @@
+.Container {
+    position: relative;
+    overflow: hidden;
+    background-color: #14323c;
+    background-image: url("../../assets/hero.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    padding: 60px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.PrimaryText {
+    color: black; 
+    font-weight: bold;
+    font-size: 62px;
+    z-index: 50;
+    text-align: center;
+    white-space: nowrap;
+    padding: 16px;
+    background-color: white;
+}
+
+.Min768Block, 
+.Min768Flex {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .Min768None {
+        display: none;
+    }
+    .Min768Block {
+        display: block;
+    }
+    .Min768Flex {
+        display: flex;
+    }
+    .PrimaryText {
+        font-size: 82px;
+    }
+    .SecondaryText {
+        font-size: 36px;
+    }
+}
