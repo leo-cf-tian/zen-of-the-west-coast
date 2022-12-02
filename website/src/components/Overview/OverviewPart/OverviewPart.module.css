@@ -26,10 +26,11 @@
 .Content {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .Image {
-    margin-left: 40px;
+    margin-top: 10px;
     width: 200px;
     border-radius: 16px;
 }
@@ -37,9 +38,11 @@
 @media only screen and (min-width: 768px) {
     .Content {
         align-items: start;
+        flex-direction: row;
     }
     .Image {
         margin-top: 28px;
+        margin-left: 40px;
     }
 }
 
