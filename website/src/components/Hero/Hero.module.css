@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     background-color: #14323c;
-    background-image: url("../../assets/hero.gif");
+    background-image: url("../../assets/home/hero.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23,6 +23,14 @@
     white-space: nowrap;
     padding: 16px;
     background-color: white;
+    user-select: none;
+}
+
+.BackgroundBox {
+    position: absolute;
+    height: 140px;
+    width: 325px;
+    background-color: lightblue;
 }
 
 .Min768Block, 
@@ -45,5 +53,11 @@
     }
     .SecondaryText {
         font-size: 36px;
+    }
+    .BackgroundBox {
+        position: absolute;
+        height: 175px;
+        width: 375px;
+        background-color: lightblue;
     }
 }

@@ -1,0 +1,25 @@
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px;
+}
+
+.Signature {
+    user-select: none;
+    margin-top: 16px;
+    font-size: 82px;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    color: turquoise;
+    display: none;
+}
+
+@media only screen and (min-width: 1260px) {
+    .Signature {
+        display: block;
+    }
+    .Container {
+        margin-bottom: 0;
+    }
+}

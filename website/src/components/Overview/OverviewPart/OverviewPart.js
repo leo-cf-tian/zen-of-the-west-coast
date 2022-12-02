@@ -7,7 +7,10 @@ const OverviewPart = (props) => {
         <div className={classes.Container}>
             <h2 className={classes.Title}>{props.title}</h2>
             <hr className={classes.Divider}/>
-            <p className={classes.Body}>{props.body}</p> 
+            <div className={classes.Content}>
+                <p className={classes.Body}>{props.body}</p> 
+                <img className={classes.Image} src={props.image} alt={props.title}/>
+            </div>
         </div>
     )
 }
