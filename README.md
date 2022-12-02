@@ -3,7 +3,7 @@
 🤖 Official website for SmartCan™ at [smartcan.jerrytq.com](https://smartcan.jerrytq.com)
 
 🗑️ **Introduction**<br>
-In the modern day, there has been a push by companies to have all devices connected - to make them “smart.” From watches to fridges, there are no bounds on what could be connected to the Internet of Things. Our team set out on the goal to make the most mundane “smart” device possible: a trash can. Immersed in peace, Zen of the West Coast set out to make the coolest trash can possible. 
+In the modern day, there has been a push by companies to have all devices connected - to make them “smart.” From watches to fridges, there are no bounds on what could be connected to the Internet of Things. Our team set out on the goal to make the most mundane “smart” device possible: a trash can. Immersed in peace, Zen of the West Coast set out to make the coolest trash can possible. <br><br>
 
 🔧 **Implementation**<br>
 Hardware was the initial focus of our project. We had three main hardware components: a distance sensor, a linear actuator, and an LCD screen. We started with the ultrasonic distance sensor as it was the easiest piece to wire and connect to the Arduino UNO. The sensor emits an ultrasonic pulse and measures the time for the pulse to come back to it, which is sent to the Arduino. The distance can then be calculated based on the known speed of the pulse emitted (speed of sound!). We tested the functionality of the sensor by having it trigger an LED when someone moved within 15 cm of it. <br><br>
